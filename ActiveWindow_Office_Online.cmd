@@ -144,12 +144,12 @@ cls
 @echo.
 @echo.
 @echo.                                 =====================================================
-@echo.                                 [  4. Office 2010                 : Nhan phim so 1  ]
-@echo.                                 [  5. Office 2013                 : Nhan phim so 2  ]
-@echo.                                 [  6. Office 2016                 : Nhan phim so 3  ]
-@echo.                                 [  7. Office 2019                 : Nhan phim so 4  ]
-@echo.                                 [  8. Office 2021                 : Nhan phim so 5  ]
-@echo.                                 [  9. Thoat                       : Nhan phim so 6  ]
+@echo.                                 [  4. Office 2010                 : Nhan phim so 4  ]
+@echo.                                 [  5. Office 2013                 : Nhan phim so 5  ]
+@echo.                                 [  6. Office 2016                 : Nhan phim so 6  ]
+@echo.                                 [  7. Office 2019                 : Nhan phim so 7  ]
+@echo.                                 [  8. Office 2021                 : Nhan phim so 8  ]
+@echo.                                 [  9. Thoat                       : Nhan phim so 9  ]
 @echo.                                 =====================================================
 color f0
 @echo.
