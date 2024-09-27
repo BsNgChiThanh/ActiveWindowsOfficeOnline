@@ -1,7 +1,7 @@
 @echo off
 color F0
 mode con cols=98 lines=30
-title Activate Office 365 Mondo, 2021, 2019, 2016, 2013, 2010 - https://github.com/BsNgChiThanh 
+title Activate Windows and office by Key Online - https://github.com/BsNgChiThanh 
 setlocal EnableExtensions EnableDelayedExpansion
 
 :======================================================================================================================================================
