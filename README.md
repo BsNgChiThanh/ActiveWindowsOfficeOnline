@@ -16,3 +16,26 @@
 
 - ![image](https://github.com/user-attachments/assets/009a3f1e-5d28-47b9-b561-195622a7c344)
 - Bấm enter, sau đó làm theo chỉ dẫn là xong!
+
+# NẾU CÓ CHUỔI ID MÀ QUÊN KEY THÌ LÀM NHƯ SAU:
+
+A. ĐỐI VỚI OFFICE:
+
+- Mở **cmd** bằng quyền **Run as Administrator** rồi dán câu lệnh dưới đây vào, nhớ thay **[ID getcid]** trong câu lệnh bên dưới:
+ 
+```PHP
+for %a in (4,5,6) do (if exist "%ProgramFiles%\Microsoft Office\Office1%a\ospp.vbs" (cd /d "%ProgramFiles%\Microsoft Office\Office1%a")
+if exist "%ProgramFiles% (x86)\Microsoft Office\Office1%a\ospp.vbs" (cd /d "%ProgramFiles% (x86)\Microsoft Office\Office1%a"))
+
+cscript.exe OSPP.vbs /actcid:[ID getcid]
+cscript.exe OSPP.vbs /act
+```
+
+B. ĐỐI VỚI WINDOWS:
+
+- Mở **cmd** bằng quyền **Run as Administrator** rồi dán câu lệnh dưới đây vào, nhớ thay **[ID getcid]** trong câu lệnh bên dưới:
+ 
+```PHP
+```
+
+- Done!
