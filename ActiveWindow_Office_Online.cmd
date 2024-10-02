@@ -32,7 +32,7 @@ if errorlevel 1 goto:ACTIVEOFFICE
 
 ﻿chcp 65001 >nul
 @echo off
-title ACTIVATE WINDOWS 7 8 8.1 10 11 Online - Copyright (C) Dominic Savio. All rights reserved.
+title ACTIVATE WINDOWS 7 8 8.1 10 11 By Key Online - Copyright (C) Dominic Savio. All rights reserved.
 mode con: cols=115 lines=35
 chcp 65001 >nul
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
@@ -115,7 +115,7 @@ exit
 
 ﻿chcp 65001 >nul
 @echo off
-title ACTIVATE OFFICE 2010-2013-2016-2019-2021 Online - Copyright (C) Dominic Savio. All rights reserved.
+title ACTIVATE OFFICE 2010-2013-2016-2019-2021 By Key Online - Copyright (C) Dominic Savio. All rights reserved.
 mode con: cols=122 lines=40
 chcp 65001 >nul
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
