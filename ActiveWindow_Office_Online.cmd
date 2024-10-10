@@ -149,13 +149,15 @@ cls
 @echo.                                 [  6. Office 2016                 : Nhan phim so 6  ]
 @echo.                                 [  7. Office 2019                 : Nhan phim so 7  ]
 @echo.                                 [  8. Office 2021                 : Nhan phim so 8  ]
-@echo.                                 [  9. Thoat                       : Nhan phim so 9  ]
+@echo.                                 [  9. Office 2021                 : Nhan phim so 9  ]
+@echo.                                 [  0. Thoat                       : Nhan phim so 0  ]
 @echo.                                 =====================================================
 color f0
 @echo.
 @echo ===========================
-Choice /N /C 456789 /M "* Nhap lua chon cua ban [4,5,6,7,8,9]: "
-if %errorlevel% == 9 goto :exit
+Choice /N /C 4567890 /M "* Nhap lua chon cua ban [0,4,5,6,7,8,9]: "
+if %errorlevel% == 0 goto :exit
+if %errorlevel% == 9 ( set "xx=16" & goto vogia)
 if %errorlevel% == 8 ( set "xx=16" & goto vogia)
 if %errorlevel% == 7 ( set "xx=16" & goto vogia)
 if %errorlevel% == 6 ( set "xx=16" & goto vogia)
