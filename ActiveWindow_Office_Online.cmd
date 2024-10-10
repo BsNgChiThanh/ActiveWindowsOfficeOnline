@@ -160,6 +160,20 @@ if %errorlevel% == 6 ( set "xx=16" & goto vogia)
 if %errorlevel% == 5 ( set "xx=15" & goto vogia)
 if %errorlevel% == 4 ( set "xx=14" & goto vogia)
 
+
+
+:exit 
+@echo.
+@echo ================================================
+@echo [  Cam on ban da su dung Activate AIO Tools!   ]
+@echo [     Thanks for using Activate AIO Tools!     ]
+@echo ================================================
+timeout 3
+start https://github.com/BsNgChiThanh
+exit
+
+
+
 :vogia
 if exist "%ProgramFiles%\Microsoft Office\Office%xx%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%xx%"
 if exist "%ProgramFiles(x86)%\Microsoft Office\Office%xx%\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office%xx%"
@@ -195,13 +209,3 @@ goto exit
 pause >nul
 exit
 )
-
-:exit 
-@echo.
-@echo ================================================
-@echo [  Cam on ban da su dung Activate AIO Tools!   ]
-@echo [     Thanks for using Activate AIO Tools!     ]
-@echo ================================================
-timeout 3
-start https://github.com/BsNgChiThanh
-exit
