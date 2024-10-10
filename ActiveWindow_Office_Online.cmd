@@ -154,11 +154,18 @@ color f0
 @echo.
 @echo ===========================
 Choice /N /C 45678 /M "* Nhap lua chon cua ban [4,5,6,7,8]: "
-if %errorlevel% == 8 goto:exit
-if %errorlevel% == 7 ( set "xx=16" & goto vogia)
-if %errorlevel% == 6 ( set "xx=16" & goto vogia)
-if %errorlevel% == 5 ( set "xx=15" & goto vogia)
-if %errorlevel% == 4 ( set "xx=14" & goto vogia)
+if errorlevel 8 goto:exit
+if errorlevel 7 (set "xx=16" & goto vogia)
+if errorlevel 6 (set "xx=16" & goto vogia)
+if errorlevel 5 (set "xx=15" & goto vogia)
+if errorlevel 4 (set "xx=14" & goto vogia)
+
+
+:exit
+@echo.
+timeout 3
+start https://github.com/BsNgChiThanh
+exit
 
 
 :vogia
@@ -196,10 +203,3 @@ goto exit
 pause >nul
 exit
 )
-
-
-:exit
-@echo.
-timeout 3
-start https://github.com/BsNgChiThanh
-exit
