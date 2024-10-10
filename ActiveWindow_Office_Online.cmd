@@ -148,13 +148,13 @@ cls
 @echo.                                 [  5. Office 2013                 : Nhan phim so 5  ]
 @echo.                                 [  6. Office 2016,2019,2021       : Nhan phim so 6  ]
 @echo.                                 [  7. Office 2024                 : Nhan phim so 7  ]
-@echo.                                 [  8. MAINMENU                    : Nhan phim so 8  ]
+@echo.                                 [  8. Thoat                       : Nhan phim so 8  ]
 @echo.                                 =====================================================
 color f0
 @echo.
 @echo ===========================
 Choice /N /C 45678 /M "* Nhap lua chon cua ban [4,5,6,7,8]: "
-if %errorlevel% == 8 goto :MAINMENU
+if %errorlevel% == 8 goto :Thoat
 if %errorlevel% == 7 ( set "xx=16" & goto vogia)
 if %errorlevel% == 6 ( set "xx=16" & goto vogia)
 if %errorlevel% == 5 ( set "xx=15" & goto vogia)
@@ -196,3 +196,10 @@ goto exit
 pause >nul
 exit
 )
+
+
+:Thoat
+@echo.
+timeout 3
+start https://github.com/BsNgChiThanh
+exit
