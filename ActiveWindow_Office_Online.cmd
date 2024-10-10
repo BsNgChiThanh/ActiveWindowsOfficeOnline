@@ -144,25 +144,25 @@ cls
 @echo.
 @echo.
 @echo.                                 =====================================================
-@echo.                                 [  3. Office 2010                 : Nhan phim so 3  ]
-@echo.                                 [  4. Office 2013                 : Nhan phim so 4  ]
-@echo.                                 [  5. Office 2016                 : Nhan phim so 5  ]
-@echo.                                 [  6. Office 2019                 : Nhan phim so 6  ]
-@echo.                                 [  7. Office 2021                 : Nhan phim so 7  ]
-@echo.                                 [  8. Office 2024                 : Nhan phim so 8  ]
+@echo.                                 [  4. Office 2010                 : Nhan phim so 4  ]
+@echo.                                 [  5. Office 2013                 : Nhan phim so 5  ]
+@echo.                                 [  6. Office 2016                 : Nhan phim so 6  ]
+@echo.                                 [  7. Office 2019                 : Nhan phim so 7  ]
+@echo.                                 [  8. Office 2021                 : Nhan phim so 8  ]
+@echo.                                 [  9. Office 2024                 : Nhan phim so 9  ]
 @echo.                                 [  E. Thoat                       : Nhan phim so E  ]
 @echo.                                 =====================================================
 color f0
 @echo.
 @echo ===========================
-Choice /N /C 3456789E /M "* Nhap lua chon cua ban [3,4,5,6,7,8,9,T]: "
+Choice /N /C 456789E /M "* Nhap lua chon cua ban [3,4,5,6,7,8,9,T]: "
 if %errorlevel% == E goto :exit
+if %errorlevel% == 9 ( set "xx=16" & goto vogia)
 if %errorlevel% == 8 ( set "xx=16" & goto vogia)
 if %errorlevel% == 7 ( set "xx=16" & goto vogia)
 if %errorlevel% == 6 ( set "xx=16" & goto vogia)
-if %errorlevel% == 5 ( set "xx=16" & goto vogia)
-if %errorlevel% == 4 ( set "xx=15" & goto vogia)
-if %errorlevel% == 3 ( set "xx=14" & goto vogia)
+if %errorlevel% == 5 ( set "xx=15" & goto vogia)
+if %errorlevel% == 4 ( set "xx=14" & goto vogia)
 
 :vogia
 if exist "%ProgramFiles%\Microsoft Office\Office%xx%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%xx%"
